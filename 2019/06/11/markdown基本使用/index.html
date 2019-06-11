@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前言效果！ 这篇文章大概说了一下markdown的基本使用规则。Code : 123---前言效果,这篇文章大概说了一下markdown的基本使用规则。---  一级标题效果二级标题效果三级标题效果四级标题效果五级标题效果六级标题效果Code : 123456#一级标题效果##二级标题效果###三级标题效果####四级标题效果#####五级标题效果######六级标题效果   无序列表（+、-、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown基本使用">
+<meta property="og:url" content="http://yoursite.com/2019/06/11/markdown基本使用/index.html">
+<meta property="og:site_name" content="DeveloperGeoky">
+<meta property="og:description" content="前言效果！ 这篇文章大概说了一下markdown的基本使用规则。Code : 123---前言效果,这篇文章大概说了一下markdown的基本使用规则。---  一级标题效果二级标题效果三级标题效果四级标题效果五级标题效果六级标题效果Code : 123456#一级标题效果##二级标题效果###三级标题效果####四级标题效果#####五级标题效果######六级标题效果   无序列表（+、-、">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557059054911&di=ce8d54759198f381a19bd339798ed5cf&imgtype=0&src=http%3A%2F%2Fimg.mvidc.com%2Fimages%2Fimage%2F11851553477990.png">
+<meta property="og:updated_time" content="2019-06-11T06:30:40.183Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="markdown基本使用">
+<meta name="twitter:description" content="前言效果！ 这篇文章大概说了一下markdown的基本使用规则。Code : 123---前言效果,这篇文章大概说了一下markdown的基本使用规则。---  一级标题效果二级标题效果三级标题效果四级标题效果五级标题效果六级标题效果Code : 123456#一级标题效果##二级标题效果###三级标题效果####四级标题效果#####五级标题效果######六级标题效果   无序列表（+、-、">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557059054911&di=ce8d54759198f381a19bd339798ed5cf&imgtype=0&src=http%3A%2F%2Fimg.mvidc.com%2Fimages%2Fimage%2F11851553477990.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/06/11/markdown基本使用/">
+
+
+
+
+
+  <title>markdown基本使用 | DeveloperGeoky</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DeveloperGeoky</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/11/markdown基本使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Geoky Guo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DeveloperGeoky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">markdown基本使用</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-11T14:29:57+08:00">
+                2019-06-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <hr>
+<h2 id="前言效果！-这篇文章大概说了一下markdown的基本使用规则。"><a href="#前言效果！-这篇文章大概说了一下markdown的基本使用规则。" class="headerlink" title="前言效果！ 这篇文章大概说了一下markdown的基本使用规则。"></a>前言效果！ 这篇文章大概说了一下markdown的基本使用规则。</h2><p><strong><em>Code :</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">前言效果,这篇文章大概说了一下markdown的基本使用规则。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="一级标题效果"><a href="#一级标题效果" class="headerlink" title="一级标题效果"></a>一级标题效果</h1><h2 id="二级标题效果"><a href="#二级标题效果" class="headerlink" title="二级标题效果"></a>二级标题效果</h2><h3 id="三级标题效果"><a href="#三级标题效果" class="headerlink" title="三级标题效果"></a>三级标题效果</h3><h4 id="四级标题效果"><a href="#四级标题效果" class="headerlink" title="四级标题效果"></a>四级标题效果</h4><h5 id="五级标题效果"><a href="#五级标题效果" class="headerlink" title="五级标题效果"></a>五级标题效果</h5><h6 id="六级标题效果"><a href="#六级标题效果" class="headerlink" title="六级标题效果"></a>六级标题效果</h6><p><strong><em>Code :</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#一级标题效果</span><br><span class="line">##二级标题效果</span><br><span class="line">###三级标题效果</span><br><span class="line">####四级标题效果</span><br><span class="line">#####五级标题效果</span><br><span class="line">######六级标题效果</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>无序列表（+、-、* 都可以）</li>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<ol>
+<li>有序列表（以第一个序列为准）</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<p><strong><em>Code :</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-无序列表</span><br><span class="line">-无序列表</span><br><span class="line">-无序列表</span><br><span class="line">1. 有序列表</span><br><span class="line">2. 有序列表</span><br><span class="line">3. 有序列表</span><br></pre></td></tr></table></figure>
+<hr>
+<p><a href="地址">超连接名称</a><br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1557059054911&amp;di=ce8d54759198f381a19bd339798ed5cf&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mvidc.com%2Fimages%2Fimage%2F11851553477990.png" alt="图片"></p>
+<p><strong><em>Code :</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名称](地址)</span><br><span class="line">![图片名称](https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1557059054911&amp;di=ce8d54759198f381a19bd339798ed5cf&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mvidc.com%2Fimages%2Fimage%2F11851553477990.png)</span><br></pre></td></tr></table></figure>
+<hr>
+<blockquote>
+<p>引用的效果：<br>欢迎关注“Geoky的博客”<br>始于颜值、陷于才华、忠于人品</p>
+</blockquote>
+<p><strong><em>Code :</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;欢迎关注“Geoky的博客”</span><br><span class="line">&gt;始于颜值、陷于才华、忠于人品</span><br></pre></td></tr></table></figure>
+<hr>
+<p><em>斜体</em><br><strong>加粗</strong><br><del>删除</del></p>
+<p><strong><em>Code :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*斜体*</span><br><span class="line">**加粗**</span><br><span class="line">~~删除~~</span><br></pre></td></tr></table></figure></p>
+<hr>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> 已完成项目1<ul>
+<li style="list-style: none"><input type="checkbox" checked> 已完成事项</li>
+<li style="list-style: none"><input type="checkbox"> 代办事项</li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox"> 代办项目2</li>
+<li style="list-style: none"><input type="checkbox"> 代办项目3</li>
+</ul>
+<p><strong><em>Code :</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- [x] 已完成项目1</span><br><span class="line">  - [x] 已完成事项</span><br><span class="line">  - [ ] 代办事项</span><br><span class="line">- [ ] 代办项目2	</span><br><span class="line">- [ ] 代办项目3</span><br></pre></td></tr></table></figure>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Code :</em></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| Tables        | Are           | Cool  |</span><br><span class="line">| ------------- |:-------------:| -----:|</span><br><span class="line">| col 3 is      | right-aligned | $1600 |</span><br><span class="line">| col 2 is      | centered      |   $12 |</span><br><span class="line">| zebra stripes | are neat      |    $1 |</span><br></pre></td></tr></table></figure>
+<hr>
+<p>其他功能:支持甘特图、流程图、序列图、数学公式</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/11/0610知识星球记录/" rel="next" title="0610知识星球记录">
+                <i class="fa fa-chevron-left"></i> 0610知识星球记录
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/11/git基本使用/" rel="prev" title="gitNote">
+                gitNote <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Geoky Guo</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言效果！-这篇文章大概说了一下markdown的基本使用规则。"><span class="nav-number">1.</span> <span class="nav-text">前言效果！ 这篇文章大概说了一下markdown的基本使用规则。</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题效果"><span class="nav-number"></span> <span class="nav-text">一级标题效果</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题效果"><span class="nav-number">1.</span> <span class="nav-text">二级标题效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题效果"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题效果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题效果"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题效果</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题效果"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题效果</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题效果"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题效果</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Geoky Guo</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

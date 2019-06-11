@@ -79,13 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="DeveloperGeoky">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Git学习笔记 目录Git简介   安装Git   创建版本库||使用vi编辑器||把文件添加到版本库||查看工作区当前状态   时光穿梭-版本回退与重返未来   工作区与暂存区-管理修改比较不同   撤销修改||删除文件   远程仓库   分支管理||Bug分支||Feature分支   多人协作 标签管理||操作标签   使用GitHub和码云 自定义Git    Git简介 Git是分布式版">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gitNote">
+<meta property="og:url" content="http://yoursite.com/2019/06/11/git基本使用/index.html">
 <meta property="og:site_name" content="DeveloperGeoky">
+<meta property="og:description" content="Git学习笔记 目录Git简介   安装Git   创建版本库||使用vi编辑器||把文件添加到版本库||查看工作区当前状态   时光穿梭-版本回退与重返未来   工作区与暂存区-管理修改比较不同   撤销修改||删除文件   远程仓库   分支管理||Bug分支||Feature分支   多人协作 标签管理||操作标签   使用GitHub和码云 自定义Git    Git简介 Git是分布式版">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://camo.githubusercontent.com/14659c736537a60e9cf0076be119e14ef3cb089a/68747470733a2f2f63646e2e6c69616f78756566656e672e636f6d2f63646e2f66696c65732f6174746163686d656e74732f30303133383439303737303239313733343637323965396166626634313237623664666261653932303761663031363030302f30">
+<meta property="og:updated_time" content="2019-06-11T06:36:34.087Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DeveloperGeoky">
+<meta name="twitter:title" content="gitNote">
+<meta name="twitter:description" content="Git学习笔记 目录Git简介   安装Git   创建版本库||使用vi编辑器||把文件添加到版本库||查看工作区当前状态   时光穿梭-版本回退与重返未来   工作区与暂存区-管理修改比较不同   撤销修改||删除文件   远程仓库   分支管理||Bug分支||Feature分支   多人协作 标签管理||操作标签   使用GitHub和码云 自定义Git    Git简介 Git是分布式版">
+<meta name="twitter:image" content="https://camo.githubusercontent.com/14659c736537a60e9cf0076be119e14ef3cb089a/68747470733a2f2f63646e2e6c69616f78756566656e672e636f6d2f63646e2f66696c65732f6174746163686d656e74732f30303133383439303737303239313733343637323965396166626634313237623664666261653932303761663031363030302f30">
 
 
 
@@ -115,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/11/git基本使用/">
 
 
 
 
 
-  <title>DeveloperGeoky</title>
+  <title>gitNote | DeveloperGeoky</title>
   
 
 
@@ -140,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +219,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/11/git基本使用/" itemprop="url">gitNote</a></h1>
+          <h1 class="post-title" itemprop="name headline">gitNote</h1>
         
 
         <div class="post-meta">
@@ -298,9 +301,7 @@
       
 
       
-        
-          
-            <h1 id="Git学习笔记"><a href="#Git学习笔记" class="headerlink" title="Git学习笔记"></a>Git学习笔记</h1><hr>
+        <h1 id="Git学习笔记"><a href="#Git学习笔记" class="headerlink" title="Git学习笔记"></a>Git学习笔记</h1><hr>
 <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><p><a href="#git简介">Git简介</a>  </p>
 <p><a href="#安装git">安装Git</a>  </p>
 <p><a href="#创建版本库">创建版本库</a>||<a href="#使用vi编辑器">使用vi编辑器</a>||<a href="#把文件添加到版本库">把文件添加到版本库</a>||<a href="#查看工作区当前状态">查看工作区当前状态</a>  </p>
@@ -569,8 +570,6 @@
 <p>但是对于某些视源代码如生命的商业公司来说，既不想公开源代码，又舍不得给GitHub交保护费，那就只能自己搭建一台Git服务器作为私有仓库使用  </p>
 <p><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="noopener">搭建见廖老师教程</a></p>
 
-          
-        
       
     </div>
     
@@ -587,12 +586,28 @@
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/11/markdown基本使用/" rel="next" title="markdown基本使用">
+                <i class="fa fa-chevron-left"></i> markdown基本使用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -602,576 +617,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/11/markdown基本使用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Geoky Guo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DeveloperGeoky">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/11/markdown基本使用/" itemprop="url">markdown基本使用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-11T14:29:57+08:00">
-                2019-06-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <hr>
-<h2 id="前言效果！-这篇文章大概说了一下markdown的基本使用规则。"><a href="#前言效果！-这篇文章大概说了一下markdown的基本使用规则。" class="headerlink" title="前言效果！ 这篇文章大概说了一下markdown的基本使用规则。"></a>前言效果！ 这篇文章大概说了一下markdown的基本使用规则。</h2><p><strong><em>Code :</em></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">前言效果,这篇文章大概说了一下markdown的基本使用规则。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<hr>
-<h1 id="一级标题效果"><a href="#一级标题效果" class="headerlink" title="一级标题效果"></a>一级标题效果</h1><h2 id="二级标题效果"><a href="#二级标题效果" class="headerlink" title="二级标题效果"></a>二级标题效果</h2><h3 id="三级标题效果"><a href="#三级标题效果" class="headerlink" title="三级标题效果"></a>三级标题效果</h3><h4 id="四级标题效果"><a href="#四级标题效果" class="headerlink" title="四级标题效果"></a>四级标题效果</h4><h5 id="五级标题效果"><a href="#五级标题效果" class="headerlink" title="五级标题效果"></a>五级标题效果</h5><h6 id="六级标题效果"><a href="#六级标题效果" class="headerlink" title="六级标题效果"></a>六级标题效果</h6><p><strong><em>Code :</em></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#一级标题效果</span><br><span class="line">##二级标题效果</span><br><span class="line">###三级标题效果</span><br><span class="line">####四级标题效果</span><br><span class="line">#####五级标题效果</span><br><span class="line">######六级标题效果</span><br></pre></td></tr></table></figure>
-<hr>
-<ul>
-<li>无序列表（+、-、* 都可以）</li>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-<ol>
-<li>有序列表（以第一个序列为准）</li>
-<li>有序列表</li>
-<li>有序列表</li>
-</ol>
-<p><strong><em>Code :</em></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-无序列表</span><br><span class="line">-无序列表</span><br><span class="line">-无序列表</span><br><span class="line">1. 有序列表</span><br><span class="line">2. 有序列表</span><br><span class="line">3. 有序列表</span><br></pre></td></tr></table></figure>
-<hr>
-<p><a href="地址">超连接名称</a><br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1557059054911&amp;di=ce8d54759198f381a19bd339798ed5cf&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mvidc.com%2Fimages%2Fimage%2F11851553477990.png" alt="图片"></p>
-<p><strong><em>Code :</em></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名称](地址)</span><br><span class="line">![图片名称](https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1557059054911&amp;di=ce8d54759198f381a19bd339798ed5cf&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mvidc.com%2Fimages%2Fimage%2F11851553477990.png)</span><br></pre></td></tr></table></figure>
-<hr>
-<blockquote>
-<p>引用的效果：<br>欢迎关注“Geoky的博客”<br>始于颜值、陷于才华、忠于人品</p>
-</blockquote>
-<p><strong><em>Code :</em></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;欢迎关注“Geoky的博客”</span><br><span class="line">&gt;始于颜值、陷于才华、忠于人品</span><br></pre></td></tr></table></figure>
-<hr>
-<p><em>斜体</em><br><strong>加粗</strong><br><del>删除</del></p>
-<p><strong><em>Code :</em></strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*斜体*</span><br><span class="line">**加粗**</span><br><span class="line">~~删除~~</span><br></pre></td></tr></table></figure></p>
-<hr>
-<ul>
-<li style="list-style: none"><input type="checkbox" checked> 已完成项目1<ul>
-<li style="list-style: none"><input type="checkbox" checked> 已完成事项</li>
-<li style="list-style: none"><input type="checkbox"> 代办事项</li>
-</ul>
-</li>
-<li style="list-style: none"><input type="checkbox"> 代办项目2</li>
-<li style="list-style: none"><input type="checkbox"> 代办项目3</li>
-</ul>
-<p><strong><em>Code :</em></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- [x] 已完成项目1</span><br><span class="line">  - [x] 已完成事项</span><br><span class="line">  - [ ] 代办事项</span><br><span class="line">- [ ] 代办项目2	</span><br><span class="line">- [ ] 代办项目3</span><br></pre></td></tr></table></figure>
-<hr>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td style="text-align:center">right-aligned</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td style="text-align:center">centered</td>
-<td style="text-align:right">$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td style="text-align:center">are neat</td>
-<td style="text-align:right">$1</td>
-</tr>
-</tbody>
-</table>
-<p><strong><em>Code :</em></strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| Tables        | Are           | Cool  |</span><br><span class="line">| ------------- |:-------------:| -----:|</span><br><span class="line">| col 3 is      | right-aligned | $1600 |</span><br><span class="line">| col 2 is      | centered      |   $12 |</span><br><span class="line">| zebra stripes | are neat      |    $1 |</span><br></pre></td></tr></table></figure>
-<hr>
-<p>其他功能:支持甘特图、流程图、序列图、数学公式</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/11/0610知识星球记录/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Geoky Guo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DeveloperGeoky">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/11/0610知识星球记录/" itemprop="url">0610知识星球记录</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-11T11:15:04+08:00">
-                2019-06-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>昨天下午坐高铁来成都，高铁上再刷之前落下的知识星球。对于这种碎片信息，如果不及时记录思考，发现很快就会忘掉。知识星球还是很开阔视野的，里边交流和分享的气氛比较浓厚。把昨天看到的做一个简单的记录。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/06/11/0610知识星球记录/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/06/hexo基本指令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Geoky Guo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DeveloperGeoky">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/06/hexo基本指令/" itemprop="url">hexo基本指令</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-06T20:19:37+08:00">
-                2019-06-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><code>hexo n &quot;我的博客&quot;</code> == <code>hexo new &quot;我的博客&quot;</code> 新建文章
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/06/06/hexo基本指令/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/27/关于我/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Geoky Guo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="DeveloperGeoky">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/27/关于我/" itemprop="url">关于我</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-27T22:15:08+08:00">
-                2019-05-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>我现在也没定义出我到底是谁，目前来看，是个熵值比较大的人。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/05/27/关于我/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -1179,6 +629,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1199,8 +653,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1242,6 +705,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git学习笔记"><span class="nav-number">1.</span> <span class="nav-text">Git学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#目录"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">目录</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Git简介"><span class="nav-number">1.1.</span> <span class="nav-text">Git简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git配置"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">Git配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git命令"><span class="nav-number">2.</span> <span class="nav-text">Git命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建版本库"><span class="nav-number">2.1.</span> <span class="nav-text">创建版本库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择一个合适目录"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">选择一个合适目录</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在当前目录初始化库"><span class="nav-number">2.1.0.2.</span> <span class="nav-text">在当前目录初始化库</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用vi编辑器"><span class="nav-number">2.2.</span> <span class="nav-text">使用vi编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#把文件添加到版本库"><span class="nav-number">2.3.</span> <span class="nav-text">把文件添加到版本库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看工作区当前状态"><span class="nav-number">2.4.</span> <span class="nav-text">查看工作区当前状态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#时光穿梭"><span class="nav-number">2.5.</span> <span class="nav-text">时光穿梭</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#确定版本回退commit-id"><span class="nav-number">2.5.1.</span> <span class="nav-text">确定版本回退commit-id</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通过查看提交历史"><span class="nav-number">2.5.1.1.</span> <span class="nav-text">通过查看提交历史</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简化显示提交历史"><span class="nav-number">2.5.1.2.</span> <span class="nav-text">简化显示提交历史</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#确定重返未来commit-id"><span class="nav-number">2.5.2.</span> <span class="nav-text">确定重返未来commit-id</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通过查看命令历史"><span class="nav-number">2.5.2.1.</span> <span class="nav-text">通过查看命令历史</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作区与暂存区"><span class="nav-number">2.6.</span> <span class="nav-text">工作区与暂存区</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#管理修改"><span class="nav-number">2.6.1.</span> <span class="nav-text">管理修改</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#修改但未add"><span class="nav-number">2.6.1.1.</span> <span class="nav-text">修改但未add</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改已add但未commit"><span class="nav-number">2.6.1.2.</span> <span class="nav-text">修改已add但未commit</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销修改"><span class="nav-number">2.7.</span> <span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件"><span class="nav-number">2.8.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">2.9.</span> <span class="nav-text">远程仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建SSH-Key"><span class="nav-number">2.9.0.1.</span> <span class="nav-text">创建SSH Key</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关联远程仓库"><span class="nav-number">2.9.0.2.</span> <span class="nav-text">关联远程仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除已经关联的远程库"><span class="nav-number">2.9.0.3.</span> <span class="nav-text">删除已经关联的远程库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#推送到远程仓库"><span class="nav-number">2.9.0.4.</span> <span class="nav-text">推送到远程仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从远程库克隆"><span class="nav-number">2.9.0.5.</span> <span class="nav-text">从远程库克隆</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理"><span class="nav-number">2.10.</span> <span class="nav-text">分支管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查看分支"><span class="nav-number">2.10.0.1.</span> <span class="nav-text">查看分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建分支"><span class="nav-number">2.10.0.2.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#切换分支"><span class="nav-number">2.10.0.3.</span> <span class="nav-text">切换分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建-切换分支"><span class="nav-number">2.10.0.4.</span> <span class="nav-text">创建+切换分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合并某分支到当前分支"><span class="nav-number">2.10.0.5.</span> <span class="nav-text">合并某分支到当前分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#普通模式合并分支"><span class="nav-number">2.10.0.6.</span> <span class="nav-text">普通模式合并分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除分支"><span class="nav-number">2.10.0.7.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#强行删除分支"><span class="nav-number">2.10.0.8.</span> <span class="nav-text">强行删除分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看分支合并图"><span class="nav-number">2.10.0.9.</span> <span class="nav-text">查看分支合并图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bug分支"><span class="nav-number">2.10.1.</span> <span class="nav-text">Bug分支</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#保存工作现场"><span class="nav-number">2.10.1.1.</span> <span class="nav-text">保存工作现场</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看保存的工作现场"><span class="nav-number">2.10.1.2.</span> <span class="nav-text">查看保存的工作现场</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#恢复工作现场"><span class="nav-number">2.10.1.3.</span> <span class="nav-text">恢复工作现场</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除工作现场"><span class="nav-number">2.10.1.4.</span> <span class="nav-text">删除工作现场</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#恢复并删除工作现场"><span class="nav-number">2.10.1.5.</span> <span class="nav-text">恢复并删除工作现场</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature分支"><span class="nav-number">2.10.2.</span> <span class="nav-text">Feature分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多人协作"><span class="nav-number">2.11.</span> <span class="nav-text">多人协作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#多人协作通常的工作模式"><span class="nav-number">2.11.0.1.</span> <span class="nav-text">多人协作通常的工作模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看远程库信息"><span class="nav-number">2.11.0.2.</span> <span class="nav-text">查看远程库信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地推送分支"><span class="nav-number">2.11.0.3.</span> <span class="nav-text">本地推送分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在本地创建和远程分支对应的分支"><span class="nav-number">2.11.0.4.</span> <span class="nav-text">在本地创建和远程分支对应的分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建立本地分支和远程分支的关联"><span class="nav-number">2.11.0.5.</span> <span class="nav-text">建立本地分支和远程分支的关联</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从远程抓取分支"><span class="nav-number">2.11.0.6.</span> <span class="nav-text">从远程抓取分支</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rebase“变基”"><span class="nav-number">2.12.</span> <span class="nav-text">Rebase“变基”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签管理"><span class="nav-number">2.13.</span> <span class="nav-text">标签管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建标签"><span class="nav-number">2.13.0.1.</span> <span class="nav-text">创建标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建带有说明的标签"><span class="nav-number">2.13.0.2.</span> <span class="nav-text">创建带有说明的标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看所有标签"><span class="nav-number">2.13.0.3.</span> <span class="nav-text">查看所有标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看对应标签的信息"><span class="nav-number">2.13.0.4.</span> <span class="nav-text">查看对应标签的信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作标签"><span class="nav-number">2.13.1.</span> <span class="nav-text">操作标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#推送某个标签到远程"><span class="nav-number">2.13.1.1.</span> <span class="nav-text">推送某个标签到远程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一次性推送全部尚未推送的标签到远程"><span class="nav-number">2.13.1.2.</span> <span class="nav-text">一次性推送全部尚未推送的标签到远程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除一个本地标签"><span class="nav-number">2.13.1.3.</span> <span class="nav-text">删除一个本地标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除一个远程标签"><span class="nav-number">2.13.1.4.</span> <span class="nav-text">删除一个远程标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用GitHub"><span class="nav-number">2.14.</span> <span class="nav-text">使用GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地库既关联GitHub，又关联码云"><span class="nav-number">2.15.</span> <span class="nav-text">本地库既关联GitHub，又关联码云</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义Git"><span class="nav-number">2.16.</span> <span class="nav-text">自定义Git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#显示颜色"><span class="nav-number">2.16.0.1.</span> <span class="nav-text">显示颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#忽略特殊文件"><span class="nav-number">2.16.0.2.</span> <span class="nav-text">忽略特殊文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置别名"><span class="nav-number">2.16.0.3.</span> <span class="nav-text">配置别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置文件"><span class="nav-number">2.16.0.4.</span> <span class="nav-text">配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建Git服务器"><span class="nav-number">2.16.0.5.</span> <span class="nav-text">搭建Git服务器</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1375,6 +854,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
