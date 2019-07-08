@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="这个二分法模板对边界问题说的很清楚，优秀！作者：liweiwei1419链接：https://leetcode-cn.com/problems/two-sum/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/来源：力扣（LeetCode）著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二分法的模板">
+<meta property="og:url" content="http://yoursite.com/2019/07/08/二分法的模板/index.html">
+<meta property="og:site_name" content="DeveloperGeoky">
+<meta property="og:description" content="这个二分法模板对边界问题说的很清楚，优秀！作者：liweiwei1419链接：https://leetcode-cn.com/problems/two-sum/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/来源：力扣（LeetCode）著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-08T09:09:14.537Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="二分法的模板">
+<meta name="twitter:description" content="这个二分法模板对边界问题说的很清楚，优秀！作者：liweiwei1419链接：https://leetcode-cn.com/problems/two-sum/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/来源：力扣（LeetCode）著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/07/08/二分法的模板/">
+
+
+
+
+
+  <title>二分法的模板 | DeveloperGeoky</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DeveloperGeoky</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/08/二分法的模板/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Geoky Guo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DeveloperGeoky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">二分法的模板</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-08T17:05:58+08:00">
+                2019-07-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这个二分法模板对边界问题说的很清楚，优秀！<br>作者：liweiwei1419<br>链接：<a href="https://leetcode-cn.com/problems/two-sum/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/two-sum/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。<br><a id="more"></a></p>
+<p>本文介绍了我这半年以来，在刷题过程中使用“二分查找法”刷题的一个模板，包括这个模板的优点、使用技巧、注意事项、调试方法等。虽说是模板，但我不打算一开始就贴出代码，因为这个模板根本没有必要记忆，只要你能够理解文中叙述的知识点和注意事项，并加以应用（刷题），相信你会和我一样喜欢这个模板，并且认为使用它是自然而然的事情。</p>
+<p>这个模板应该能够帮助你解决 LeetCode 带“二分查找”标签的常见问题（简单、中等难度）。</p>
+<p>（温馨提示：右键，在弹出的下拉列表框中选择“在新标签页中打开图片”，可以查看大图。） </p>
+<p>历史上，二分查找算法虽然思想简单，但引起了人们的足够重视和关注。</p>
+<p>1、算法和程序设计技术的先驱 Donald Ervin Knuth（中文名：高德纳）：</p>
+<p>Although the basic idea of binary search is comparatively straightforward, the details can be surprisingly tricky …</p>
+<p>译：“虽然二分查找的基本思想相对简单，但细节可能会非常棘手”。来自维基百科 Binary_search_algorithm，请原谅本人可能非常不优雅的中文翻译。</p>
+<p>2、同样是高德纳先生，在其著作《计算机程序设计的艺术 第3卷：排序和查找》中指出：</p>
+<p>二分查找法的思想在 1946 年就被提出来了。但是第 1 个没有 Bug 的二分查找法在 1962 年才出现。</p>
+<p>（因为时间和能力的关系，原谅我没有办法提供英文原文，如果能找到英文原文的朋友欢迎提供一下出处，在此先谢过。）</p>
+<p>据说这个 Bug 在 Java 的 JDK 中都隐藏了将近 10 年以后，才被人们发现并修复。</p>
+<p>3、《编程珠玑》的作者 Jon Bentley：</p>
+<p>When Jon Bentley assigned binary search as a problem in a course for professional programmers, he found that ninety percent failed to provide a correct solution after several hours of working on it, mainly because the incorrect implementations failed to run or returned a wrong answer in rare edge cases.</p>
+<p>译：当 JonBentley 把二分查找作为专业程序员课程中的一个问题时，他发现百分之九十的人在花了几个小时的时间研究之后，没有提供正确的解决方案，主要是因为错误的实现无法正确运行（笔者注：可能返回错误的结果，或者出现死循环），或者是不能很好地判断边界条件。</p>
+<p>我最早学习的二分查找法分为递归版本和非递归版本：</p>
+<p>说明：上面这两段代码是我建议你忘掉的，我最后给出的代码我也不建议你记住，理解并应用它就可以了。它们都可以直接完成二分查找算法的模板题：「力扣」第 704 题：二分查找。</p>
+<p>下面，我们使用这个模板完成一下本题（「力扣」第 35 题：搜索插入位置）。</p>
+<p>分析：根据题意并结合题目给出的 4 个示例，不难分析出这个问题的等价表述如下：</p>
+<p>1、如果目标值（严格）大于排序数组的最后一个数，返回这个排序数组的长度，否则进入第 2 点。</p>
+<p>2、返回排序数组从左到右，大于或者等于目标值的第 1 个数的索引。</p>
+<p>事实上，当给出数组中有很多数和目标值相等的时候，我们返回任意一个与之相等的数的索引值都可以，不过为了简单起见，也为了方便后面的说明，我们返回第 1 个符合题意的数的索引。</p>
+<p>题目告诉你“排序数组”，其实就是在疯狂暗示你用二分查找法。 二分查找法的思想并不难，但写好一个二分法并不简单，下面就借着这道题为大家做一个总结。</p>
+<p>一、传统二分查找法模板<br>刚接触二分查找法的时候，使用上面的模板，我们可能会像下面这样写代码，我把这种写法容易出错的地方写在了注释里：</p>
+<p>参考代码：</p>
+<p>Java<br>public class Solution {</p>
+<pre><code>public int searchInsert(int[] nums, int target) {
+    int len = nums.length;
+    if (nums[len - 1] &lt; target) {
+        return len;
+    }
+
+    int l = 0;
+    int r = len - 1;
+
+    while (l &lt;= r) {
+        int mid = (l + r) / 2;
+        // 等于的情况最简单，我们放在第 1 个分支进行判断
+        if (nums[mid] == target) {
+            return mid;
+        } else if (nums[mid] &lt; target) {
+            // 题目要我们返回大于或者等于目标值的第 1 个数的索引
+            // 此时 mid 一定不是所求的左边界，
+            // 此时左边界更新为 mid + 1
+            l = mid + 1;
+        } else {
+            // 既然不会等于，此时 nums[mid] &gt; target
+            // mid 也一定不是所求的右边界
+            // 此时右边界更新为 mid - 1
+            r = mid - 1;
+        }
+    }
+    // 注意：一定得返回左边界 l，
+    // 如果返回右边界 r 提交代码不会通过
+    // 下面我尝试说明一下理由，如果你不太理解下面我说的，那是我的表达问题
+    // 【注意】建议你不要纠结这个问题，因为我马上介绍的二分法模板，可以避免对返回 l 和 r 的思考
+
+    // 理由是对于 [1,3,5,6]，target = 2，返回大于等于 target 的第 1 个数的索引，此时应该返回 1
+    // 在上面的 while (l &lt;= r) 退出循环以后，r &lt; l，r = 0 ，l = 1
+    // 根据题意应该返回 l，
+    // 如果题目要求你返回小于等于 target 的所有数里最大的那个索引值，应该返回 r
+
+    return l;
+}
+</code></pre><p>}<br>说明：</p>
+<p>1、当你把二分查找法内，循环可以进行的条件写成 while (l &lt;= r) 的话，在写最后一句 return 的时候，如果你不假思索，把左边界 l 返回回去，你写对了，但为什么不返回右边界 r 呢？</p>
+<p>2、但是事实上，返回 l 是有一定道理的，如果题目换一种问法，你可能就要返回右边界 r，这句话不太理解没有关系，我也不打算讲得很清楚（在上面代码的注释中我已经解释了），因为实在太绕了，这不是我要说的重点。</p>
+<p>由此，我认为“传统二分查找法模板”使用的痛点在于：</p>
+<p>传统二分查找法模板，当退出 while 循环的时候，在返回左边界还是右边界这个问题上，比较容易出错。</p>
+<p>那么，是不是可以回避这个问题呢？答案是肯定的，答案就在下面我要介绍的“神奇的”二分查找法模板里。</p>
+<p>二、“神奇的”二分查找法模板<br>二分查找法的思想：二分查找法的思想是“夹逼”，或者说“排除”，而“二分”只是手段。即“通过二分排除了候选区间的一大半的非目标元素”。具体说来，如下：</p>
+<p>在每一轮循环中，都可以排除候选区间里将近一半的元素，进而使得候选区间越来越小，直至有限个数（通常为 11 个），而这个数就有可能是我们要找的数（在一些情况下，还需要单独做判断）。</p>
+<p>下面我要介绍的“神奇的”二分查找法模板，就把这个思想发挥到了极致。</p>
+<p>在一些资料中，你可能看过别人写二分查找法，把循环可以进行的条件写成 while (l &lt; r) ，当时你是不是跟我一样有疑问：“咦？当左右边界一样的时候，那个数岂不是会被漏掉”。但是我要告诉你，这样写在绝大多数情况下是最好的，这也是“神奇的”二分查找法模板好用的一部分。</p>
+<p>理由很简单：写 while (l &lt; r) 的时候，退出循环时，左边界等于右边界，因此你不必纠结要返回 l 还是 r ，此时返回 l 或者 r 都是可以的。</p>
+<p>二分查找法之所以高效，是因为它利用了数组有序的特点，在每一次的搜索过程中，都可以排除将近一半的数，使得搜索区间越来越小，直到区间成为一个数。回到这一节最开始的疑问：“区间左右边界相等（即收缩成 1 个数）时，这个数是否会漏掉”，解释如下：</p>
+<p>1、如果你的业务逻辑保证了你要找的数一定在左边界和右边界所表示的区间里出现，那么可以放心地返回 l 或者 r，而无需再做判断；</p>
+<p>2、如果你的业务逻辑不能保证你要找的数一定在左边界和右边界所表示的区间里出现，那么只要在退出循环以后，再针对 nums[l] 或者 nums[r] （此时 nums[l] == nums[r]）单独作一次判断，看它是不是你要找的数即可。</p>
+<p>阶段总结：</p>
+<p>加上了对候选区间是否存在目标元素的思考和判断，写 while (l &lt; r) 这个逻辑就可以避免你对返回左边界还是右边界的讨论。</p>
+<p>下面给出这道问题，使用 while (l &lt; r) 模板写法的参考代码。</p>
+<p>参考代码：</p>
+<p>PythonJava<br>class Solution:</p>
+<pre><code>def searchInsert(self, nums, target):
+    # 返回大于等于 target 的索引，有可能是最后一个
+    size = len(nums)
+    if size == 0:
+        return 0
+    l = 0
+    # 如果 target 比 nums里所有的数都大，则最后一个数的索引 + 1 就是候选值，因此，右边界应该是数组的长度
+    r = size
+
+    # 二分的逻辑一定要写对，否则会出现死循环或者数组下标越界
+    while l &lt; r:
+        mid = l + (r - l) // 2
+        if nums[mid] &lt; target:
+            l = mid + 1
+        else:
+            r = mid
+    return l
+</code></pre><p>当然，这段代码你可能看得还是云里雾里，下面我马上就要解释其中的玄机。</p>
+<p>三、技巧、调试方法和注意事项<br>1、先来看 int mid = left + (right - left) / 2; 这句代码，这就是对文章一开始所说的那个在 Java 的 JDK 中被人们忽视了将近 10 年的 Bug 的修复：</p>
+<p>（1）当 l 和 r 是很大的整数的时候，如果写 int mid = (l + r) / 2; 这里 l + r 的值就有可能超过 int 类型能表示的最大值，因此使用 mid = l + (r - l) // 2 可以避免这种情况。</p>
+<p>（2）事实上，mid = l + (r - l) // 2 在 r 很大，并 l 是负数且很小的时候， r - l 也有可能超过 int 类型能表示的最大值，只不过一般情况下 l 和 r 表示的是数组索引值，l 是非负数，因此 r - l 溢出的可能性很小。</p>
+<p>2、当数组的元素个数是偶数的时候，中位数有左中位数和右中位数之分：</p>
+<p>（1）当数组的元素个数是偶数的时候：</p>
+<p>使用 mid = l + (r - l) // 2 得到左中位数的索引；</p>
+<p>使用 mid = l + (r - l + 1) // 2 得到右中位数的索引。</p>
+<p>（2）当数组的元素个数是奇数的时候，以上二者都能选到最中间的那个中位数。</p>
+<p>事实上，这不是什么特别难想的事情，我们只要使用一个具体的例子来验证即可：当左边界索引 l = 3，右边界索引 r = 4 的时候，</p>
+<p>mid1 = l + (r - l) // 2 = 3 + (4 - 3) // 2 = 3 + 0 = 3，</p>
+<p>mid2 = l + (r - l + 1) // 2 = 3 + (4 - 3 + 1) // 2 = 3 + 1 = 4。</p>
+<p>左中位数 mid1 是索引 l，右中位数 mid2 是索引 r。</p>
+<p>记忆方法：</p>
+<p>(r - l) 不加 11 选左中位数，加 11 选右中位数。</p>
+<p>那么，什么时候使用左中位数，什么时候使用右中位数呢？选中位数的依据是为了避免死循环，得根据分支的逻辑来选择中位数，而分支逻辑的编写也有技巧，下面展开来说。</p>
+<p>3、编写分支逻辑的时候，先写“排除逻辑”所在的分支。</p>
+<p>这里介绍很重要的一个技巧：先考虑能把“中位数”排除在外的逻辑，而不能排除“中位数”的逻辑放在 else 分支里，这样做的理由有 2 点：</p>
+<p>（1）可以排除“中位数”的逻辑，通常比较好想，但并不绝对，这一点视情况而定；</p>
+<p>（2）分支条数变成 2 条，比原来 3 个分支要考虑的情况少，好处是：</p>
+<p>不用在每次循环开始单独考虑中位数是否是目标元素，节约了时间，我们只要在退出循环的时候，即左右区间压缩成一个数（索引）的时候，去判断这个索引表示的数是否是目标元素，而不必在二分的逻辑中单独做判断。</p>
+<p>这一点很重要，希望读者结合具体练习仔细体会，每次循环开始的时候都单独做一次判断，在统计意义上看，二分时候的中位数恰好是目标元素的概率并不高，并且即使要这么做，也不是普适性的，不能解决绝大部分的问题。</p>
+<p>以本题为例，通过之前的分析，我们需要找到“大于或者等于目标值的第 1 个数的索引”。对于这道题而言：</p>
+<p>（1）如果中位数小于目标值，它就应该被排除，左边界 l 就至少是 mid + 1；</p>
+<p>（2）如果中位数大于等于目标值，还不能够肯定它就是我们要找的数，因为要找的是等于目标值的第 1 个数的索引，中位数以及中位数的左边都有可能是符合题意的数，因此右边界就不能把 mid 排除，因此右边界 r 至多是 mid，此时右边界不向左边收缩。</p>
+<p>下一点就更关键了。</p>
+<p>4、根据分支编写的情况，选择使用左中位数还是右中位数。</p>
+<p>先写分支，根据分支的逻辑选中位数，选左中位数还是右中位数，这要做的理由是为了防止出现死循环。</p>
+<p>死循环容易发生在区间元素只有 2 个时候，此时中位数的选择尤为关键。</p>
+<p>选择中位数的依据：为了避免出现死循环，我们需要确保：</p>
+<p>（下面的这两条规则说起来很绕，可以暂时跳过，不要去记它，我写的时候都晕）。</p>
+<p>1、如果分支的逻辑，在选择左边界的时候，不能排除中位数，那么中位数就选“右中位数”，只有这样区间才会收缩，否则进入死循环；</p>
+<p>2、同理，如果分支的逻辑，在选择右边界的时候，不能排除中位数，那么中位数就选“左中位数”，只有这样区间才会收缩，否则进入死循环。</p>
+<p>理解上面的这个规则可以通过具体的例子。针对以上规则的第 1 点：如果分支的逻辑，在选择左边界的时候不能排除中位数，例如：</p>
+<p>Python 伪代码：</p>
+<p>while l &lt; r:</p>
+<pre><code>  # 不妨先写左中位数，看看你的分支会不会让你代码出现死循环，从而调整
+mid = l + (r - l) // 2
+# 业务逻辑代码
+if (check(mid)):
+    # 选择右边界的时候，可以排除中位数
+    r = mid - 1
+else:
+    # 选择左边界的时候，不能排除中位数
+    l = mid
+</code></pre><p>在区间中的元素只剩下 2 个时候，例如：l = 3，r = 4。此时左中位数就是左边界，如果你的逻辑执行到 l = mid 这个分支，且你选择的中位数是左中位数，此时左边界就不会得到更新，区间就不会再收缩（理解这句话是关键），从而进入死循环；<br>为了避免出现死循环，你需要选择中位数是右中位数，当逻辑执行到 l = mid 这个分支的时候，因为你选择了右中位数，让逻辑可以转而执行到 r = mid - 1 让区间收缩，最终成为 1 个数，退出 while 循环。<br>上面这段话不理解没有关系，因为我还没有举例子，你有个印象就好，类似地，理解选择中位数的依据的第 2 点。</p>
+<p>5、当出现死循环的时候的调试方法：打印输出左右边界、中位数的值和目标值、分支逻辑等必要的信息。</p>
+<p>按照我的经验，一开始编码的时候，稍不注意就很容易出现死循环，不过没有关系，你可以你的代码中写上一些输出语句，就容易理解“在区间元素只有 2 个的时候容易出现死循环”。具体编码调试的细节，可以参考我在「力扣」第 69 题：x 的平方根的题解《二分查找 + 牛顿法（Python 代码、Java 代码）》 。</p>
+<p>四、使用总结<br>总结一下，我爱用这个模板的原因、技巧、优点和注意事项：</p>
+<p>1、原因：</p>
+<p>无脑地写 while l &lt; r: ，这样你就不用判断，在退出循环的时候你应该返回 l 还是 r，返回 l 或者 r 都对；</p>
+<p>2、技巧：</p>
+<p>先写分支逻辑，并且先写排除中位数的逻辑分支（因为更多时候排除中位数的逻辑容易想，但是前面我也提到过，这并不绝对），另一个分支的逻辑你就不用想了，写出第 1 个分支的反面代码即可（下面的说明中有介绍），再根据分支的情况选择使用左中位数还是右中位数；</p>
+<p>说明：这里再多说一句。如果从代码可读性角度来说，只要是你认为好想的逻辑分支，就把它写在前面，并且加上你的注释，这样方便别人理解，而另一个分支，你就不必考虑它的逻辑了。有的时候另一个分支的逻辑并不太好想，容易把自己绕进去。如果你练习做得多了，会形成条件反射。</p>
+<p>我简单总结了一下，左右分支的规律就如下两点：</p>
+<p>如果第 1 个分支的逻辑是“左边界排除中位数”（l = mid + 1），那么第 2 个分支的逻辑就一定是“右边界不排除中位数”（r = mid），反过来也成立；</p>
+<p>如果第 2 个分支的逻辑是“右边界排除中位数”（r = mid - 1），那么第 2 个分支的逻辑就一定是“左边界不排除中位数”（l = mid），反之也成立。</p>
+<p>“反过来也成立”的意思是：如果在你的逻辑中，“边界不能排除中位数”的逻辑好想，你就把它写在第 1 个分支，另一个分支是它的反面，你可以不用管逻辑是什么，按照上面的规律直接给出代码就可以了。能这么做的理论依据就是“排除法”。</p>
+<p>在「力扣」第 287 题：寻找重复数的题解《二分法（Python 代码、Java 代码）》和这篇题解的评论区中，有我和用户 @fighterhit 给出的代码，在一些情况下，我们先写了不排除中位数的逻辑分支，更合适的标准就是“哪个逻辑分支好想，就先写哪一个”，欢迎大家参与讨论。</p>
+<p>3、优点：</p>
+<p>分支条数只有 2 条，代码执行效率更高，不用在每一轮循环中单独判断中位数是否符合题目要求，写分支的逻辑的目的是尽量排除更多的候选元素，而判断中位数是否符合题目要求我们放在最后进行，这就是第 5 点；</p>
+<p>说明：每一轮循环开始都单独判断中位数是否符合要求，这个操作不是很有普适性，因为从统计意义上说，中位数直接就是你想找的数的概率并不大，有的时候还要看看左边，还要看看右边。不妨就把它放在最后来看，把候选区间“夹逼”到只剩 1 个元素的时候，视情况单独再做判断即可。</p>
+<p>4、注意事项 1：</p>
+<p>左中位数还是右中位数选择的标准根据分支的逻辑而来，标准是每一次循环都应该让区间收缩，当候选区间只剩下 2 个元素的时候，为了避免死循环发生，选择正确的中位数类型。如果你实在很晕，不防就使用有 2 个元素的测试用例，就能明白其中的原因，另外在代码出现死循环的时候，建议你可以将左边界、右边界、你选择的中位数的值，还有分支逻辑都打印输出一下，出现死循环的原因就一目了然了；</p>
+<p>5、注意事项 2：</p>
+<p>如果能确定要找的数就在候选区间里，那么退出循环的时候，区间最后收缩成为 1 个数后，直接把这个数返回即可；如果你要找的数有可能不在候选区间里，区间最后收缩成为 1 个数后，还要单独判断一下这个数是否符合题意。</p>
+<p>最后给出两个模板，大家看的时候看注释，不必也无需记忆它们。</p>
+<p>说明：我写的时候，一般是先默认将中位数写成左中位数，再根据分支的情况，看看是否有必要调整成右中位数，即是不是要在 (r - l) 这个括号里面加 1 。</p>
+<p>虽说是两个模板，区别在于选中位数，中位数根据分支逻辑来选，原则是区间要收缩，且不出现死循环，退出循环的时候，视情况，有可能需要对最后剩下的数单独做判断。</p>
+<p>我想我应该是成功地把你绕晕了，如果您觉得啰嗦的地方，就当我是“重要的事情说了三遍”吧，确实是重点的地方我才会重复说。当然，最好的理解这个模板的方法还是应用它。在此建议您不妨多做几道使用“二分查找法”解决的问题，用一下我说的这个模板，在发现问题的过程中，体会这个模板好用的地方，相信你一定会和我一样爱上这个模板的。</p>
+<p>在「力扣」的探索版块中，给出了二分查找法的 3 个模板，我这篇文章着重介绍了第 2 个模板，但是我介绍的角度和这个版块中给出的角度并不一样，第 1 个模板被我“嫌弃”了，第 3 个模板我看过了，里面给出的例题也可以用第 2 个模板来完成，如果大家有什么使用心得，欢迎与我交流。</p>
+<p>五、应用提升<br>这里给出一些练习题，这些练习题都可以使用这个“神奇的”二分查找法模板比较轻松地写出来，并且得到一个不错的分数，大家加油！</p>
+<p>说明：传送门。这道题是二分查找的模板题，因为目标值有可能在数组中并不存在，所以退出 while 循环的时候，要单独判断一下。</p>
+<p>说明：传送门。</p>
+<p>（1）题解链接已经在上文中已经给出，这道题根据分支的逻辑应该选右中位数；</p>
+<p>（2）这道题因为还有更高效的“牛顿法”，所以看起来排名并不是特别理想。</p>
+<p>说明：传送门，第 300 题的一个子过程就是本题（第 35 题），我在这道题的题解《动态规划 + 贪心算法（二分法）（Python 代码、Java 代码）》 中给了两个 Python 的示例代码，它们是对本文中给出的注意事项：</p>
+<p>如果你确定要搜索的数在区间里，循环完成以后直接返回即可；如果你不确定要搜索的数在区间里，循环完成以后需要再做一次判断。</p>
+<p>的具体代码实现。</p>
+<p>说明：传送门，二分查找法还可以用于部分有序数组中元素的查找。</p>
+<p>说明：传送门。</p>
+<p>说明：传送门，这道题是对“数”作二分，而不是对索引做二分，具体可以参考我写的题解《二分法（Python 代码、Java 代码）》。</p>
+<p>说明：传送门。这道题很有意思，做这一道题等于做了 3 道二分查找的问题，并且，你还会发现，这 3 个二分查找的问题写出来的分支都是一样的，因此它们选中位数的时候，都选择了左中位数。</p>
+<p>说明：传送门。这道题是「力扣」的探索版块里给出了二分查找法的 3 个模板中第 3 个模板的练习题，实际上也可以用我给出的这个模板（即“探索”里面的第 2 个模板）来完成，这道题我也写了题解《排除法（双指针） + 二分法（Python 代码、Java 代码）》。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/24/运营思路/" rel="next" title="运营思路">
+                <i class="fa fa-chevron-left"></i> 运营思路
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Geoky Guo</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Geoky Guo</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
